@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand" id="nav-name">Hồ sơ Khoa học</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#publications">Công trình</a></li>
+            <li><a href="#activities">Hoạt động</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero section fade-in">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="hero-name"></h1>
+                <h3 id="hero-title"></h3>
+                <p id="hero-inst" class="institution"><i class="fas fa-university"></i> <span></span></p>
+                <blockquote id="hero-motto"></blockquote>
+            </div>
+            <div class="hero-image">
+                <img id="hero-img" src="" alt="Chân dung PGS. TS.">
+                <div class="metrics-badge"><span id="badge-hindex"></span> H-Index</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section slide-up">
+        <div class="container">
+            <h2>Giới thiệu chung</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3><i class="fas fa-graduation-cap"></i> Quá trình đào tạo</h3>
+                    <p id="about-edu"></p>
+                    <h3><i class="fas fa-bullseye"></i> Sứ mệnh nghiên cứu</h3>
+                    <p id="about-mission"></p>
+                </div>
+                <div class="interests-cards" id="interests-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section slide-up bg-light">
+        <div class="container">
+            <h2>Công trình công bố</h2>
+            <div class="metrics-row" id="metrics-container"></div>
+            <div class="accordion-container" id="pubs-accordion"></div>
+        </div>
+    </section>
+
+    <section id="projects" class="section slide-up">
+        <div class="container">
+            <h2>Dự án & Đề tài nghiên cứu</h2>
+            <div class="accordion-container" id="projects-accordion"></div>
+        </div>
+    </section>
+
+    <section id="activities" class="section slide-up bg-light">
+        <div class="container">
+            <h2>Hoạt động & Thành tựu</h2>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header">Hoạt động Giảng dạy & Hướng dẫn <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <div style="padding: 20px;">
+                            <strong>Các môn học đảm nhiệm:</strong>
+                            <ul id="teaching-courses" style="margin-left: 20px; margin-bottom: 15px;"></ul>
+                            <strong>Hướng dẫn nghiên cứu:</strong>
+                            <p id="teaching-supervision"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Giải thưởng & Vinh danh <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <ul id="awards-list" style="padding: 20px; margin-left: 20px;"></ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Hoạt động Cộng đồng & Chuyên môn <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <ul id="service-list" style="padding: 20px; margin-left: 20px;"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Thông tin liên hệ</h2>
+            <p><i class="fas fa-envelope"></i> maihuynhcang@hcmuaf.edu.vn</p>
+
+<p><i class="fas fa-map-marker-alt"></i> Bộ môn Hợp chất thiên nhiên, Khoa Công nghệ Hóa học và Thực phẩm, Trường Đại học Nông Lâm TP.HCM</p>
+            <div class="social-links">
+    <a href="https://scholar.google.com/citations?user=mBSSH40AAAAJ&hl=en" target="_blank">
+        <i class="fa-brands fa-google"></i> Scholar
+    </a>
+
+    <a href="LINK_RESEARCHGATE_CUA_CO" target="_blank">
+        <i class="fa-brands fa-researchgate"></i> ResearchGate
+    </a>
+
+    <a href="LINK_LINKEDIN_CUA_CO" target="_blank">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+</div>
+            <p class="copyright">© 2026 Academic Portfolio.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
